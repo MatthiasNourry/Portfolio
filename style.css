@@ -215,17 +215,10 @@ width: 50vw;
 
 }
 video {
-margin: 100px 100px;
+margin: 100px 200px;
 
 }
 
-iframe{
-	margin-right: 50px;
-	margin-bottom: 20px;
-	margin-top: 100px;
-	margin-left: 400px;
-
-}
 
 #textvid {
 width: 50vw;
@@ -301,12 +294,11 @@ display: flex;
 #Galerie{
 display:flex;
 width: 100vw;
-flex-direction: row;
-margin-top: 100px;
+margin-top: 50px;
 background-color:rgba(255, 255,255);
-padding-top: 50px;
+padding-top: 20px;
 filter: drop-shadow(0 0 0.50rem white);
-justify-content: space-between;
+justify-content: center;
 
 }
 
@@ -314,12 +306,12 @@ justify-content: space-between;
 #col1{
 width: 30vw;
 flex-direction: column;
-
-
+margin-right:20px;
+margin-left: 5px;
 }
 
 #col1 img{
-width: 50px;
+width: 100%;
 margin-bottom: 20px;
 filter: drop-shadow(0 0 0.50rem black);
 }
@@ -331,7 +323,7 @@ flex-direction: column;
 }
 
 #col2 img{
-width: 50px;
+width: 100%;
 margin-bottom: 20px;
 filter: drop-shadow(0 0 0.50rem black);
 }
@@ -339,11 +331,12 @@ filter: drop-shadow(0 0 0.50rem black);
 #col3{
 width:30vw;
 flex-direction: column;
-
+margin-left: 20px;
+margin-right: 5px;
 }
 
 #col3 img{
-width:50px;
+width:100%;
 margin-bottom: 20px;
 filter: drop-shadow(0 0 0.50rem black);
 }
@@ -353,8 +346,21 @@ filter: drop-shadow(0 0 0.50rem black);
 footer {
 	background-color:#151015;
 	padding-bottom: 100px;
+
 }
 
+#footer  {
+display: flex;
+	width: 100vw;
+	justify-content: space-evenly;
+}
+
+#footer a{
+list-style:none;	
+text-decoration:none;	
+color: #FEDE39;
+
+}
 
 
 
@@ -380,16 +386,14 @@ footer {
 #yt {
 	flex-direction: column;
 }
-video {
-justify-items: center;
-width: 80%;
-}
+
 #titrepartie{
 	font-size: 2em;
 }
 
 #milieu1 p {
-font-size: 0.5em;
+font-size: 1em;
+text-align: center;
 
 }
 
@@ -404,22 +408,20 @@ font-size: 0.5em;
 	flex-direction: column;
 }
 
-#apro h2{
+#droite1 h2{
 	text-align: center;
 	font-size: 2em;
 }
 
-#apro h3{
+#droite1 h3{
 	text-align: center;
 	font-size: 1em;
 	margin-top: 0px;
 }
 
-#scroll{
-	display: none;
-}
+
 header h1{
-	font-size: 10px;
+	font-size: 15px;
 	text-align: none;
 }
 
@@ -429,9 +431,7 @@ justify-content: none;
 padding: 0px 0px;
 }
 
-header ul {
-	justify-content: space-between;
-	}
+
 
 
 header ul li {
@@ -439,7 +439,7 @@ header ul li {
 
 }
 header ul li a{
-	font-size: 0.5em;
+	font-size: 0.7em;
 	color:#fff;;
 }
 
@@ -452,6 +452,7 @@ header.sticky {
 
 #titrepartie{
 	margin-top: 0px;
+	padding-bottom: 20px;
 }
 
 #gauche1{
@@ -477,13 +478,43 @@ border-radius: 0%;
 }
 
 #realisation{
+width: 100vw;
+}
 
-}
 video {
-	margin-left: 10px;
-	margin: 0px 0px;
-	justify-content: center;
+		margin: 0px auto;
+		width: 100%;
 }
+
+
+#textvid{
+		width: 100vw;
+}
+
+#textvid h3 {
+	text-align: center;
+	margin-top: 20px;
+}
+
+#textvid p{
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 html {
 	overflow-x:hidden ;
