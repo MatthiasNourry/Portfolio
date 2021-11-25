@@ -19,28 +19,27 @@
   </head>
 	
 	<body>
-    <!--
+  
     <div class="loader">
       <div class="load-text">
         <div class="loaded-text">B</div>
         <div class="loading-text">ONJOUR</div>
       </div>
     </div>
-    -->
+
 		<header>
       <div id="haut">
-      <div id="nom">
+      
 			<h1>Matthias Nourry</h1>
-			</div>
+		
 
-      <div id="ancre">
       <ul>
 				<li> <a href="#1">Moi</a></li>
 				<li> <a href="#2">Videos</a></li>
 				<li> <a href="#3">Galerie</a></li>
 				<li> <a href="#4">Contacts</a></li>
 			</ul>
-    </div>
+   
   </div>
 		</header>
 
@@ -98,7 +97,7 @@
 </div>
 <h3 id="souspartie"> Creation 3D</h3>
 <div id="icone1">
-<img src="icon/blender.png"  >
+<img src="icon/Blender.png"  >
 </div>
 
 </div>
@@ -231,13 +230,13 @@
 
 
 <footer>
-	<h1 id="titrepartie">Contact</h1>
+	<h2 id="titrepartie">Contacts</h2>
 <div id="4"></div>
 
 <div id="footer">
 
 <a href=https://www.linkedin.com/in/matthias-nourry-22902b210/ target="_blank"> Mon linkedin </a>
-<a href="mailto:matthias.nourry@gmail.com/" target="_blank">Contactez-moi</a>
+<a href="mailto:matthias.nourry@gmail.com/" target="_blank">Mon email</a>
 </div>
 </footer>
 
@@ -273,6 +272,17 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 1200);
 });
+
+const loader = document.querySelector('.loader');
+window.addEventListener('load',()=>{
+
+    loader.classList.add('fadeOut');
+
+    setTimeout(()=>{
+    loader.setAttribute('style', 'display:none;');
+    },1000)
+});
+
 
 
 </script> 

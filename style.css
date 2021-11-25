@@ -1,7 +1,3 @@
-html {
-	font-family: 'Open Sans', sans-serif;
-
-}
 
 *
 {
@@ -11,9 +7,15 @@ html {
 }
 body {
 	 overflow-x: hidden;
+font-family: hammer;
 
 }
 
+@font-face{
+	font-family: hammer;
+	src:url("font/hammer.ttf") format("opentype");
+
+}
 h2{
 font-size: 4em;
 }
@@ -25,36 +27,36 @@ header {
 	top: 0;
 	left: 0;
 	width: 100vw;
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	transition: 0.6s;
 	z-index: 1;
 	color: #fff;
+
 }
 
 header.sticky {
-	
 	background-color: #fff;
 	color: #151015;
 }
 
 header h1
 {
-	position: relative;
-	font-weight: 700px;
-	text-decoration: none;
-	font-size: 2em;
+	font-size: 30px;
 	text-transform: uppercase;
 	letter-spacing: 2px;	
 	text-align: center;
-	width: 30vw;
+
+	width: 40vw;
+	
+margin-top: auto ;
+margin-bottom: auto;
 }
 
 
 header ul 
 {
-	position: relative;
+	margin-bottom: 0px;
 	display: flex;
 	width: 50vw;
 	justify-content: space-between;
@@ -62,8 +64,9 @@ header ul
 
 header ul li 
 {
+margin-top: auto ;
+margin-bottom: auto;
 	list-style:none;
-	margin-top: 20px;
   margin-left: 50px;
 	font-size: 20px;
 }
@@ -78,6 +81,8 @@ header ul li a
 	letter-spacing:2px;
 	color: #fff;
 	transition: 0.6s;
+	font-size: 30px;
+	
 }
 
 header.sticky ul li a 
@@ -100,18 +105,8 @@ header.sticky ul li a
 
 }
 
-.slider{
-  width: 800px;
-  height: 500px;
-  border-radius: 10px;
-  overflow: hidden;
-}
 
 
-.slide{
-  width: 20%;
-  transition: 2s;
-}
 
 #presentation
 {
@@ -353,17 +348,74 @@ footer {
 display: flex;
 	width: 100vw;
 	justify-content: space-evenly;
+	margin-top: 100px;
 }
 
 #footer a{
 list-style:none;	
 text-decoration:none;	
 color: #FEDE39;
-
+font-size: 3em;
 }
 
 
+.loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  animation: backgroundChange .5s linear 3s forwards;
+  z-index: 5555755846;
+}
 
+.load-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-size: 10vmax;
+  width: fit-content;
+  display: flex;
+  animation: colorChange .5s linear 3s forwards;
+}
+
+.loaded-text {
+  transform: scale(1.5);
+  animation: scaleText .5s linear .5s forwards;
+}
+
+.loading-text {
+  width: 0;
+  overflow: hidden;
+  animation: expand .5s linear 1.5s forwards;
+}
+
+@keyframes scaleText {
+  from {transform: scale(1.5)}
+  to {transform: scale(1)}
+}
+
+@keyframes expand {
+  from {width: 0;}
+  to {width: 40vmax;}
+}
+
+@keyframes backgroundChange {
+  from {background-color: white}
+  to {background-color:#151015}
+}
+
+@keyframes colorChange {
+  from {color: black}
+  to {color: white}
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: all 0.8s ease-out;
+}
 
 
 
@@ -423,12 +475,14 @@ text-align: center;
 header h1{
 	font-size: 15px;
 	text-align: none;
+width: 25vw;
 }
 
 header 
 {
 justify-content: none;
 padding: 0px 0px;
+
 }
 
 
@@ -439,7 +493,7 @@ header ul li {
 
 }
 header ul li a{
-	font-size: 0.7em;
+	font-size: 0.6em;
 	color:#fff;;
 }
 
@@ -484,6 +538,8 @@ width: 100vw;
 video {
 		margin: 0px auto;
 		width: 100%;
+		padding-left:10px ;
+		padding-right: 10px;
 }
 
 
@@ -501,6 +557,9 @@ video {
 	padding-bottom: 100px;
 }
 
+#footer a {
+	font-size: 1em;
+}
 
 
 
