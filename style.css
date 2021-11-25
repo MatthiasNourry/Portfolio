@@ -1,4 +1,7 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
 *
 {
 	margin:0;
@@ -7,15 +10,12 @@
 }
 body {
 	 overflow-x: hidden;
-font-family: hammer;
-
+	 font-family: 'Hammersmith One', sans-serif;
 }
 
-@font-face{
-	font-family: hammer;
-	src:url("font/hammer.ttf") ;
 
-}
+
+
 h2{
 font-size: 4em;
 }
@@ -147,6 +147,13 @@ header.sticky ul li a
 	text-align: center;
 	color: #FEDE39;
 }
+
+#milieu1 a {
+	text-decoration:none;
+		color: #FEDE39;*
+
+	}
+
 #gauche1{
 	width: 50vw;
 margin-top: 100px;
@@ -209,8 +216,9 @@ text-align: center;
 width: 50vw;
 
 }
-video {
-margin: 100px 200px;
+iframe {
+margin-left: 200px;
+margin-top: 100px;
 
 }
 
@@ -423,7 +431,7 @@ font-size: 3em;
 
 
 
-@media screen and (max-width: 425px) { 
+@media screen and (max-width: 768px) { 
 
 
 
@@ -448,6 +456,8 @@ font-size: 1em;
 text-align: center;
 
 }
+
+
 
 #textvid{
 	margin-top: 0px;
@@ -539,7 +549,7 @@ border-radius: 0%;
 width: 100vw;
 }
 
-video {
+iframe {
 		margin: 0px auto;
 		width: 100%;
 		padding-left:10px ;
