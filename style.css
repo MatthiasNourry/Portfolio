@@ -87,6 +87,7 @@ header ul li a
 
 header.sticky ul li a 
 {
+	text-decoration:none;
   color: #151015;
 }
 
@@ -150,7 +151,7 @@ header.sticky ul li a
 
 #milieu1 a {
 	
-		color: #FEDE39;*
+		color: #FEDE39;
 
 	}
 
