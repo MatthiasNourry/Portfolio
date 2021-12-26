@@ -87,7 +87,6 @@ header ul li a
 
 header.sticky ul li a 
 {
-	text-decoration:none;
   color: #151015;
 }
 
@@ -150,10 +149,10 @@ header.sticky ul li a
 }
 
 #milieu1 a {
-	
-		color: #FEDE39;
+	text-decoration:none;
+		color: #FEDE39;	}
 
-	}
+		
 
 #gauche1{
 	width: 50vw;
@@ -339,13 +338,54 @@ margin-left: 20px;
 margin-right: 5px;
 }
 
+
 #col3 img{
 width:100%;
 margin-bottom: 20px;
 filter: drop-shadow(0 0 0.50rem black);
 }
 
+#columne1{
+	  position: relative;
+}
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 90px;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(21, 16, 21, 0.6);;
+  
+}
+
+#columne1:hover .overlay{
+ opacity: 1;
+ 
+}
+
+.text {
+  color: #FEDE39;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
 
 footer {
 	background-color:#151015;
